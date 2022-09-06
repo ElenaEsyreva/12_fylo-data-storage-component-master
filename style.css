@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: hsl(229, 57%, 11%) url("./images/bg-desktop.png") no-repeat 0 120%;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+}
+
+.content{
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+}
+.card1{
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px 90px 10px 10px;
+    padding: 40px 160px 15px 40px;
+    margin-right: 5%;
+    height: 140px;
+}
+.icon{
+    display: flex;
+    margin-top: 30px;
+}
+.box{
+    background-color: hsl(229, 57%, 11%);
+    margin-right: 15px;
+    padding: 4px 10px;
+    border-radius: 5px;
+}
+.box1{
+    padding-top: 8px;
+}
+
+.box2{
+    padding-top: 9px;
+}
+.box3{
+    padding-top: 10px;
+}
+.card2{
+    position: relative;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px;
+    padding: 40px 30px 30px 30px;
+    height: 80px;
+}
+.text{
+  color: hsl(243, 100%, 93%);
+    font-size: 0.9em;
+}
+.indicator{
+    height: 18px;
+    width: 450px;
+    background-color: hsl(229, 57%, 11%, 50%);
+    margin-top: 15px;
+    border-radius: 10px;
+    padding-top: 1.5px;
+}
+.gradient{
+    width: 350px;
+    height: 15px;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 10px;
+    padding-top: 1px;
+
+}
+.circle{
+    width: 13px;
+    height: 13px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 334px;
+}
+.GB{
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+.GB div{
+    color: hsl(243, 100%, 93%);
+    font-size: 0.8em;
+}
+.traffic{
+    position: absolute;
+    right: 40px;
+    top: -50px;
+    font-size: 2.5em;
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(0, 0%, 100%);
+    align-items: center;
+    padding: 15px 25px;
+    border-radius: 15px;
+}
+.GB_left{
+    color: hsl(229, 7%, 55%);
+    font-size: 0.3em;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+.corner{
+    position: absolute;
+    height: 50px;
+    width: 30px;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 50%);
+    right: 40px;
+    top: 15px;
+}
+@media (max-width: 375px) {
+    body{
+        background-image: url("./images/bg-mobile.png");
+    }
+    .content{
+        flex-direction: column;
+        height: 100vh;
+        margin-top: 15%;
+    }
+    .card1{
+       padding: 40px 100px 15px 40px;
+       margin-right: 0;
+        width: 170px;
+
+    }
+    .card2{
+        margin-top: 5%;
+    }
+    .corner{
+        display: none;
+    }
+    .indicator{
+        width: 250px;
+    }
+    .gradient{
+        width: 200px;
+    }
+    .circle{
+        margin-left: 184px;
+    }
+    .traffic{
+        top: 130px;
+        left: 65px;
+        width: 130px;
+    }
+}
